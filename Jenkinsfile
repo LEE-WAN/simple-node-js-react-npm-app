@@ -6,14 +6,14 @@ pipeline {
 
   }
   stages {
-    stage('Build') {
+    stage('Whoami?') {
       steps {
-        sh 'npm install'
+        sh 'uname -a'
       }
     }
     stage('Test') {
       steps {
-        sh './jenkins/scripts/test.sh'
+        sh 'curl 127.0.0.1'
       }
     }
     stage('Deliver') {
